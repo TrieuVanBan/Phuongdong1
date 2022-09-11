@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>Bệnh viện Phương Đông</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header id="result" class="fixed z-10 w-[100%] py-4">
+        <div class="container flex justify-between items-center">
+            <div id="btn-menu" class="z-20 lg:hidden cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            <div class="w-32 lg:w-[15%] z-20">
+                <a href="">
+                    <img class="w-[100%] h-[100%]" src="./image/logo.png" alt="Logo">
+                </a>
+            </div>
+            <ul id="menu"
+                class="lg:px-10 fixed z-10 invisible top-0 left-0 bottom-100 w-full h-screen bg-gray bg-opacity-90 flex flex-col justify-center items-center lg:visible lg:flex-row lg:justify-evenly lg:h-auto lg:bg-transparent lg:static">
+                <li class="m-4 lg:m-0"><a class="hover:text-green text-white lg:text-black transition duration-500"
+                        href="">Giới thiệu</a></li>
+                <li class="m-4 lg:m-0"><a class="hover:text-green text-white lg:text-black transition duration-500"
+                        href="">Đối tượng khách hàng</a></li>
+                <li class="m-4 lg:m-0"><a class="hover:text-green text-white lg:text-black transition duration-500"
+                        href="">Quy trình</a></li>
+                <li class="m-4 lg:m-0"><a class="hover:text-green text-white lg:text-black transition duration-500"
+                        href="">Bảng giá</a></li>
+                <li class="m-4 lg:m-0"><a class="hover:text-green text-white lg:text-black transition duration-500"
+                        href="">Cảm nhận của khách hàng</a></li>
+                <li class="m-4 lg:m-0"><a class="hover:text-green text-white lg:text-black transition duration-500"
+                        href="">Đội ngũ bác sĩ</a></li>
+            </ul>
+            <div
+                class="bg-gradient-to-r from-green to-green-btn shadow-lg shadow-green/50 text-white flex rounded-full px-2 py-1 lg:w-[19%] xl:w-[15%]">
+                <a class="w-[100%] flex justify-evenly items-center" href="tel:0866824564">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        </svg>
+                    </div>
+                    <p>Gọi 1900 1806</p>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <section class="mb-10 w-full bg-no-repeat bg-cover h-[635px] md:h-[500px] lg:h-[650px]"
+        style="background-image: url('/image/banner.png')">
+        <div class="flex flex-col lg:container text-white pt-36 px-4">
+            <h3 class="flex items-center text-lg font-medium mb-2 lg:w-[60%]">TẦM SOÁT UNG THƯ TUYẾN GIÁP <div
+                    class="hidden lg:inline w-[10%] bg-white h-[2px] ml-3"></div>
+            </h3>
+            <h2 class="text-3xl font-bold mb-6 md:max-w-[70%] lg:max-w-[70%] xl:w-[54%] leading-tight lg:text-6xl lg:leading-[72px]">
+                Phát hiện sớm ung thư giúp điều trị dễ dàng</h2>
+            <span class="mb-10 w-[76%] md:w-[48%] lg:w-[46%] xl:w-[36%] 2xl:w-[32%]">Tầm soát ung thư tuyến giáp là phương pháp y học hiện đại giúp phát hiện
+                sớm các tổn thương tiền ung
+                thư. Đây được đánh giá là chìa khóa để đưa ra phương pháp điều trị sớm và hiệu quả nhất.
+            </span>
+            <div>
+                <span class="block pb-2">Quý khách vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ lại ngay!</span>
+                <form
+                    class="bg-white flex lg:justify-between rounded-full sm:max-w-[40%] md:max-w-[45%] lg:max-w-[42%] py-1"
+                    action="">
+                    <input class="text-lg w-[210px] text-black outline-none rounded-full lg:ml-6 lg:py-2" type="text"
+                        placeholder="Nhập số điện thoại...">
+                    <a class="text-xs lg:text-base px-1 flex items-center justify-center bg-gradient-to-r from-green to-green-btn shadow-lg shadow-green/50 rounded-full lg:mr-2 lg:w-[30%]"
+                        href="">
+                        <div class="">
+                            <img class="w-5 mr-1" src="/image/telegram.png" alt="">
+                        </div>
+                        GỬI THÔNG TIN
+                    </a>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="bg-no-repeat bg-right-bottom img lg:h-[620px] xl:h-[780px] max-w-[1920px] m-auto"
+        style="background-image: url('/image/backgrou1.png')">
+        <div class="px-4 flex flex-col-reverse lg:flex-row container">
+            <div class="w-[100%] mt-10 lg:mt-36 lg:w-[60%]">
+                <h2 class="text-[32px] font-bold pb-6">Gói Tầm soát ung thư tuyến giáp là gì?</h2>
+                <span class="block mb-5 indent-5 lg:indent-0 lg:pr-12 xl:pr-32 2xl:pr-52">
+                    Tầm soát ung thư tuyến giáp là phương pháp y học hiện đại giúp phát hiện sớm các tổn thương tiền ung
+                    thư. Đây được đánh giá là chìa khóa để đưa ra phương pháp điều trị sớm nhất, nâng cao hiệu quả phục
+                    hồi, hạn chế các diễn biến xấu dẫn tới tử vong.
+                </span>
+                <span class="block mb-5 indent-5 lg:indent-0 lg:pr-12 xl:pr-32 2xl:pr-52">
+                    Hiện nay xét nghiệm tầm soát ung thư tuyến giáp được nhiều người quan tâm. Thống kê cho thấy căn
+                    bệnh chỉ chiếm từ 1 - 2% trong toàn bộ các loại ung thư, tuy nhiên nó lại chiếm tới 90% ung thư các
+                    tuyến nội tiết. Đặc biệt, bệnh đứng hàng thứ 9 trong số các ung thư xảy ra ở nữ giới.
+                </span>
+                <span class="block mb-5 indent-5 lg:indent-0 lg:pr-12 xl:pr-32 2xl:pr-52">
+                    Điều đáng lo ngại hiện nay là bệnh ung thư tuyến giáp vẫn thường bị bỏ sót. Thậm chí có từ 20 - 60%
+                    tổng số bệnh nhân không biết mình mắc bệnh cho tới khi diễn biến xấu ở giai đoạn cuối. Điều này là
+                    cực kỳ đáng lo ngại bởi nghiên cứu đã chỉ ra rằng bệnh ung thư tuyến giáp có tỷ lệ chữa khỏi đạt tới
+                    90% nếu như được khám và phát hiện sớm.
+                </span>
+                <div
+                    class="w-[80%] m-auto lg:m-0 bg-gradient-to-r from-green to-green-btn shadow-lg shadow-green/50 text-white flex items-center justify-center rounded-full px-2 py-2 sm:w-[50%] lg:w-[25%]">
+                    <a class="flex " href="tel:0866824564">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>
+                        </div>
+                        <p class="ml-3">Gọi cho chúng tôi</p>
+                    </a>
+                </div>
+            </div>
+            <div class="w-[100%] mt-5 lg:w-[40%]">
+                <img src="./image/anh1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- section 2 -->
+
+    <section class="bg-no-repeat img bg-left-bottom lg:h-[635px] xl:h-[860px] max-w-[1920px] m-auto"
+        style="background-image: url('/image/backgrou2.png')">
+        <div class="px-4 lg:px-0 flex flex-col lg:flex-row container lg:pt-[50px]">
+            <div class="w-[100%] mt-20 lg:w-[40%]">
+                <img src="./image/anh2.png" alt="">
+                <div
+                    class="w-[80%] m-auto mt-5 lg:m-0 bg-gradient-to-r from-green to-green-btn shadow-lg shadow-green/50 text-white flex items-center justify-center rounded-full px-2 py-2 sm:w-[50%] lg:w-[40%] lg:mt-8 lg:ml-32">
+                    <a class="flex " href="tel:0866824564">
+                        Đăng ký tư vấn
+                    </a>
+                </div>
+            </div>
+            <div class="w-[100%] mt-10 lg:w-[60%] lg:ml-[40px]">
+                <h2 class="text-[32px] font-bold mb-6 mt-1 lg:mt-14">Ai nên khám tầm soát ung thư tuyến giáp?</h2>
+                <span class="block mb-5 indent-5 lg:indent-0 lg:pr-4 xl:pr-12 2xl:pr-28">
+                    Phát hiện sớm bệnh lý ung thư tuyến giáp không chỉ nâng cao hiệu quả trong điều trị mà còn hạn
+                    chế các biến chứng, tổn thương, gia tăng cơ hồi hồi phục hoàn toàn cho người bệnh. Theo khuyến
+                    cáo của bác sĩ Bệnh Viện Đa khoa Phương Đông, những trường hợp sau đây nên khám sàng lọc định
+                    kỳ căn bệnh.
+                </span>
+                <div class="xl:pr-40 2xl:pr-60">
+                    <div class="flex items-center  mb-2 lg:h-14 lg:mb-0">
+                        <img class="w-[40px] h-[40px] mr-4" src="/image/icon.png" alt="">
+                        <span class="flex">
+                            Nữ giới ở độ tuổi từ 15 - 35 và nam giới trong độ tuổi từ 40 trở lên, những người có nhu
+                            cầu thăm khám bệnh ung thư tuyến giáp.
+                        </span>
+                    </div>
+                    <div class="flex items-center max-h-24 mb-2 lg:h-14 lg:mb-0">
+                        <img class="w-[40px] h-[40px] mr-4" src="/image/icon.png" alt="">
+                        <span class="flex items-center">
+                            Đối tượng có tiền sử gia đình có người bị ung thư tuyến giáp, người mắc hội chứng Cowden,
+                            MEN II hoặc FAP.
+                        </span>
+                    </div>
+                    <div class="flex items-center max-h-24 mb-2 lg:h-14 lg:mb-0">
+                        <img class="w-[40px] h-[40px] mr-4" src="/image/icon.png" alt="">
+                        <span class="flex items-center">
+                            Những người có chế độ ăn thiếu i - ốt.
+                        </span>
+                    </div>
+                    <div class="flex items-center max-h-24 mb-2 lg:h-14 lg:mb-0">
+                        <img class="w-[40px] h-[40px] mr-4" src="/image/icon.png" alt="">
+                        <span class="flex">
+                            Đối tượng bị phơi nhiễm phóng xạ ở mức cao.
+                        </span>
+                    </div>
+                    <div class="flex items-center max-h-24 mb-2 lg:h-14 lg:mb-0">
+                        <img class="w-[40px] h-[40px] mr-4" src="/image/icon.png" alt="">
+                        <span class="flex items-center">
+                            Người đang mắc các bệnh liên quan tới tuyến giáp và có thể trạng mệt mỏi, sút cân nhanh.
+                        </span>
+                    </div>
+                    <div class="flex items-center max-h-24 mb-2 lg:h-14 lg:mb-0">
+                        <img class="w-[40px] h-[40px] mr-4" src="/image/icon.png" alt="">
+                        <span class="flex items-center">
+                            Đối tượng xuất hiện triệu chứng bất thường nghi ngờ ung thư tuyến giáp như: Có khối u ở vùng
+                            tuyến giáp,
+                            giọng nói khàn, hạch bạch huyết sưng to,...
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 3 -->
+
+    <section class="mt-[40px] lg:mt-[120px] px-4 lg:px-0 lg:mb-28">
+        <div class="container">
+            <h2 class="text-3xl text-center font-bold pt-10 lg:mb-5">Dấu hiệu nhận biết Ung thư tuyến giáp</h2>
+            <div class="flex flex-wrap">
+                <div
+                    class="flex flex-[50%] sm:flex-[50%] lg:flex-[33%] flex-col items-center px-2 py-8 sm:px-12 lg:px-20 lg:py-6">
+                    <img class="w-[30px] h-[30px]" src="/image/icon1.png" alt="">
+                    <h4 class="font-semibold mt-[16px] mb-[8px]">Ho kéo dài mãi</h4>
+                    <p class="text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</p>
+                </div>
+                <div
+                    class="flex flex-[50%] sm:flex-[50%] lg:flex-[33%] flex-col items-center px-2 py-8 sm:px-12 lg:px-20 lg:py-6">
+                    <img class="w-[30px] h-[30px]" src="/image/icon2.png" alt="">
+                    <h4 class="font-semibold mt-[16px] mb-[8px]">Cơ thể mệt mỏi</h4>
+                    <p class="text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</p>
+                </div>
+                <div
+                    class="flex flex-[50%] sm:flex-[50%] lg:flex-[33%] flex-col items-center px-2 py-8 sm:px-12 lg:px-20 lg:py-6">
+                    <img class="w-[30px] h-[30px]" src="/image/icon3.png" alt="">
+                    <h4 class="font-semibold mt-[16px] mb-[8px]">Các tuyến ở cổ bị sưng</h4>
+                    <p class="text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</p>
+                </div>
+                <div
+                    class="flex flex-[50%] sm:flex-[50%] lg:flex-[33%] flex-col items-center px-2 py-8 sm:px-12 lg:px-20 lg:py-6">
+                    <img class="w-[30px] h-[30px]" src="/image/icon4.png" alt="">
+                    <h4 class="font-semibold mt-[16px] mb-[8px]">Khó thở, khó nuốt</h4>
+                    <p class="text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</p>
+                </div>
+                <div
+                    class="flex flex-[50%] sm:flex-[50%] lg:flex-[33%] flex-col items-center px-2 py-8 sm:px-12 lg:px-20 lg:py-6">
+                    <img class="w-[30px] h-[30px]" src="/image/icon5.png" alt="">
+                    <h4 class="font-semibold mt-[16px] mb-[8px]">Thay đổi giọng nói</h4>
+                    <p class="text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</p>
+                </div>
+                <div
+                    class="flex flex-[50%] sm:flex-[50%] lg:flex-[33%] flex-col items-center px-2 py-8 sm:px-12 lg:px-20 lg:py-6">
+                    <img class="w-[30px] h-[30px]" src="/image/icon6.png" alt="">
+                    <h4 class="font-semibold mt-[16px] mb-[8px]">Cổ đau phía trước</h4>
+                    <p class="text-center">Một số dấu hiệu ung thư tuyến giáp giai đoạn đầu cần hết sức lưu ý</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- section 4 -->
+
+    <section
+        class="relative container px-4 lg:px-0 bg-no-repeat img1 bg-left-bottom lg:h-[640px] 2xl:h-[550px] lg:mt-14"
+        style="background-image: url('/image/backgrou3.png')">
+        <div class="invisible lg:visible flex">
+            <a>
+                <img class="absolute left-[28px] top-1/2" src="/image/prev.png" alt="">
+            </a>
+            <a>
+                <img class="absolute right-[40px] top-1/2" src="/image/next.png" alt="">
+            </a>
+        </div>
+        <div class="lg:w-[80%] lg:m-auto flex flex-col-reverse lg:flex-row">
+            <img class="w-[45%] lg:w-[90%] m-auto " src="/image/anh3.png" alt="">
+            <div class="lg:ml-8">
+                <h2 class="text-3xl font-bold leading-10">Gói tầm soát ung thư tuyến giáp tại BVĐK Phương Đông bao gồm
+                    những gì?</h2>
+                <ul class="flex flex-col my-5 lg:mt-14 text-lg lg:text-base lg:flex-row justify-between">
+                    <li><a class="font-bold" href="">Khám bệnh tổng quát</a></li>
+                    <li><a href="">Khám chuyên khoa Ngoại</a></li>
+                    <li><a href="">Chẩn đoán hình ảnh</a></li>
+                    <li><a href="">Xét nghiệm</a></li>
+                </ul>
+                <h4 class="lg:text-white text-xl font-bold pb-3 sm:pt-0 xl:pt-12 lg:pb-5">Khám bệnh tổng quát</h4>
+                <p class="pb-2 lg:py-0 lg:text-white text-sm">Khách hàng sẽ được đón tiếp và thăm khám bởi các chuyên
+                    gia, y bác sĩ hàng đầu, giỏi về chuyên
+                    môn, giàu kinh nghiệm. Bác sĩ sẽ khai thác bệnh sử, khám lâm sàng để phát hiện các nguy cơ ban
+                    đầu. Từ đó có căn cứ để chỉ định thực hiện xét nghiệm và chẩn đoán bằng hình ảnh.
+                </p>
+                <p class="pb-2 lg:py-0 lg:text-white text-sm">
+                    Bác sĩ phụ trách khám tổng quát cũng chính là người sẽ tiếp nhận kết quả chẩn đoán và đưa ra
+                    kết luận cuối cùng.
+                </p>
+                <p class="pb-2 lg:py-0 lg:text-white text-sm">Tầm soát, sàng lọc ung thư tuyến giáp là một trong những
+                    kỹ thuật khó, không phải bệnh viện nào
+                    cũng có thể thực hiện. Phương pháp đòi hỏi cơ sở y tế phải có hệ thống máy móc và thiết bị y tế
+                    chuyên biệt cùng đội ngũ y bác sĩ giàu kinh nghiệm.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- section 5 -->
+
+    <section class="bg-no-repeat bg-right-bottom img lg:h-[530px] xl:h-[780px] lg:mt-20 max-w-[1920px] m-auto"
+        style="background-image: url('/image/backgrou1.png')">
+        <div class="px-4 flex flex-col lg:flex-row container">
+            <div class="w-[100%] mt-10 lg:mt-20 lg:w-[60%]">
+                <h2 class="text-3xl font-bold mb-6 lg:mb-10">Lưu ý khi sử dụng dịch vụ</h2>
+                <div class="ml-2 lg:mr-20">
+                    <div class="flex items-center max-h-[180px] lg:h-[70px]">
+                        <img class="w-[30px] h-[30px] mr-4" src="/image/icon7.png" alt="">
+                        <p>Những trường hợp nghi ngờ ung thư tuyến giáp, bác sĩ có thể chỉ định người bệnh thực hiện
+                            thêm các xét nghiệm như chọc hút tế bào tuyến giáp thêm các xét nghiệm như chọc hút tế bào.
+                        </p>
+                    </div>
+                    <div class="flex items-center max-h-[180px] lg:h-[70px]">
+                        <img class="w-[30px] h-[30px] mr-4" src="/image/icon7.png" alt="">
+                        <p>Với những trường hợp nghi ngờ ung thư tuyến giáp, bác sĩ có thể chỉ định.
+                        </p>
+                    </div>
+                    <div class="flex items-center max-h-[180px] lg:h-[70px]">
+                        <img class="w-[30px] h-[30px] mr-4" src="/image/icon7.png" alt="">
+                        <p>Trường hợp nghi ngờ ung thư tuyến giáp, bác sĩ có thể chỉ định người bệnh thực hiện
+                            thêm các xét nghiệm như chọc hút tế bào tuyến giáp.
+                        </p>
+                    </div>
+                    <div class="flex items-center max-h-[180px] lg:h-[70px]">
+                        <img class="w-[30px] h-[30px] mr-4" src="/image/icon7.png" alt="">
+                        <p>Nghi ngờ ung thư tuyến giáp, bác sĩ có thể chỉ định người bệnh thực hiện
+                            thêm các xét nghiệm.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="w-[80%] m-auto mt-8 lg:mt-8 lg:m-0 bg-gradient-to-r from-green to-green-btn shadow-lg shadow-green/50 text-white flex justify-center rounded-full px-2 py-2 sm:w-[50%] lg:w-[25%]">
+                    <a class="" href="tel:0866824564">
+                        Đăng ký tư vấn
+                    </a>
+                </div>
+            </div>
+            <div class="w-[100%] mt-5 lg:w-[40%]">
+                <img src="./image/anh4.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- section 6 -->
+
+    <section class="container px-4 lg:px-0 lg:mx-auto mt-14 relative">
+        <!-- <div class="hidden lg:inline">
+            <a class="absolute top-[280px] -left-16">
+                <img src="./image/prev.png" alt="">
+                
+            </a>
+            <a class=" absolute top-[280px] -right-16">
+                <img src="./image/next.png" alt="">
+            </a>
+        </div> -->
+        <h2 class="text-3xl lg:text-[38px] font-bold my-20 lg:text-center">Các gói dịch vụ liên quan</h2>
+        <!-- <div class="flex flex-col flex-wrap lg:flex-row lg:pl-4"> -->
+        <div class=" swiper mySwiper">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide">
+                    <div class="flex-[33%] flex flex-col mb-14">
+                        <a class="text-center" href="">
+                            <img src="./image/anh5.png" alt="">
+                        </a>
+                        <div class="lg:px-5">
+                            <a href="" class="block text-lg font-semibold mt-6 h-14 xl:h-[100%]">Gói Khám sàng lọc ung thư tiền liệt
+                                tuyến</a>
+                            <p class="my-4 md:h-[230px] xl:h-[200px]">Ung thư tiền liệt tuyến rất nguy hiểm, đe dọa nặng nề đến sức khỏe nam giới.
+                                Vì vậy các bác sĩ
+                                luôn khuyến nghị người thuộc đối tượng có nguy cơ cao mắc căn bệnh này nên khám sàng lọc
+                                định kỳ
+                                để có thể phát hiện sớm, chính xác, giúp điều trị hiệu quả.
+                            </p>
+                            <a class="mt-3 text-green-btn font-semibold" href="">Đăng ký tư vấn ngay >></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex-[33%] flex flex-col  mb-14">
+                        <a href="">
+                            <img src="./image/anh6.png" alt="">
+                        </a>
+                        <div class="lg:px-5">
+                            <a href="" class="block text-lg font-semibold mt-6 h-14 xl:h-[100%]">Gói Khám soát ung thư đường tiêu hoá</a>
+                            <p class="my-4 md:h-[230px] xl:h-[200px]">Tầm soát ung thư đường tiêu hoá là việc làm rất quan trọng với mỗi người.
+                                Tầm soát định kỳ được
+                                khuyến cáo cho tất cả mọi người, trong đó những trường hợp đặc biệt dưới đây thuộc nguy
+                                cơ cao
+                                mắc ung thư đường tiêu hoá.
+                            </p>
+                            <a class="mt-3 text-green-btn font-semibold" href="">Đăng ký tư vấn ngay >></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex-[33%] flex flex-col  mb-14">
+                        <a href="">
+                            <img src="./image/anh7.png" alt="">
+                        </a>
+                        <div class="lg:px-5">
+                            <a href="" class="block text-lg font-semibold mt-6 h-14 xl:h-[100%]">Gói Khám sàng lọc ung thư phổi</a>
+                            <p class="my-4 md:h-[230px] xl:h-[200px]">Ung thư phổi là một trong những bệnh lý nguy hiểm đe dọa cả phụ nữ và nam
+                                giới tại Việt Nam. Bởi
+                                vậy, khám sàng lọc ung thư phổi luôn được các bác sĩ khuyến khích thực hiện định kỳ nhằm
+                                phát
+                                hiện sớm tình trạng bệnh để có phương án điều trị hiệu quả.
+                            </p>
+                            <a class="mt-3 text-green-btn font-semibold" href="">Đăng ký tư vấn ngay >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="invisible lg:visible flex justify-center">
+            <div class="bg-gradient-to-r from-pink-btn to-pink-btn1 w-[4%] h-2 rounded-full lg:mr-1"></div>
+            <div class="bg-gray w-[2%] h-2 rounded-full"></div>
+        </div> -->
+    </section>
+    <!-- section 7 -->
+
+    <section class="px-4 pt-0 bg-no-repeat bg-top img md:h-[480px] lg:h-[660px] xl:h-[780px] lg:mt-20 text-black"
+        style="background-image: url('/image/backgrou4.png')">
+        <h2
+            class="px-4 pb-10 lg:w-[45%] m-auto xl:text-white lg:text-center font-bold text-3xl sm:pb-[28px] lg:text-[38px] xl:pt-[82px] lg:pb-[48px]">
+            Lợi ích khi sử dụng dịch vụ Tầm soát ung thư tuyến giáp</h2>
+        <div class="lg:w-[73%] m-auto gap-8 flex flex-col md:flex-row flex-wrap xl:text-white">
+            <div class="flex flex-[45%] items-center gap-3 border-2 lg:w-[688px] lg:min-h-[90px] rounded-2xl">
+                <img class="hidden lg:inline w-[30px] h-[30px] ml-[18px]" src="/image/icon8.png" alt="">
+                <p class="text-sm p-3">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh
+                    rộng khắp, rất lý
+                    tưởng trong việc điều trị và hồi phục của người bệnh.</p>
+            </div>
+            <div class="flex flex-[45%] items-center gap-3 border-2 lg:w-[688px] lg:min-h-[90px] rounded-2xl">
+                <img class="hidden lg:inline w-[30px] h-[30px] ml-[18px]" src="/image/icon8.png" alt="">
+                <p class="text-sm p-3">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh
+                    rộng khắp, rất lý
+                    tưởng trong việc điều trị và hồi phục của người bệnh. </p>
+            </div>
+            <div class="flex flex-[45%] items-center gap-3 border-2 lg:w-[688px] lg:min-h-[90px] rounded-2xl">
+                <img class="hidden lg:inline w-[30px] h-[30px] ml-[18px]" src="/image/icon8.png" alt="">
+                <p class="text-sm p-3">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh
+                    rộng khắp, rất lý
+                    tưởng trong việc điều trị và hồi phục của người bệnh. </p>
+            </div>
+            <div class="flex flex-[45%] items-center gap-3 border-2 lg:w-[688px] lg:min-h-[90px] rounded-2xl">
+                <img class="hidden lg:inline w-[30px] h-[30px] ml-[18px]" src="/image/icon8.png" alt="">
+                <p class="text-sm p-3">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh
+                    rộng khắp, rất lý
+                    tưởng trong việc điều trị và hồi phục của người bệnh. </p>
+            </div>
+            <div class="flex flex-[45%] items-center gap-3 border-2 lg:w-[688px] lg:min-h-[90px] rounded-2xl">
+                <img class="hidden lg:inline w-[30px] h-[30px] ml-[18px]" src="/image/icon8.png" alt="">
+                <p class="text-sm p-3">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh
+                    rộng khắp, rất lý
+                    tưởng trong việc điều trị và hồi phục của người bệnh. </p>
+            </div>
+            <div class="flex flex-[45%] items-center gap-3 border-2 lg:w-[688px] lg:min-h-[90px] rounded-2xl">
+                <img class="hidden lg:inline w-[30px] h-[30px] ml-[18px]" src="/image/icon8.png" alt="">
+                <p class="text-sm p-3">Bệnh viện có khuôn viên khang trang, hiện đại và trong lành với hệ thống cây xanh
+                    rộng khắp, rất lý
+                    tưởng trong việc điều trị và hồi phục của người bệnh. </p>
+            </div>
+        </div>
+    </section>
+    <!-- section 8 -->
+
+    <section class="px-4 lg:px-0 mt-10 lg:mt-0">
+        <h2 class="text-3xl font-semibold lg:text-[38px] mb-10 md:text-center lg:w-[48%] lg:leading-normal m-auto ">Quy
+            trình thăm khám ung thư tuyến giáp tại BVĐK Phương Đông</h2>
+        <div class="container flex flex-wrap">
+            <div class="mb-12 flex flex-[50%] md:flex-[23%] lg:gap-4 flex-col items-center ">
+                <img src="/image/icon9.png" alt="">
+                <h3 class="font-medium text-lg">Bước 1:</h3>
+                <p class="min-h-[50px] w-[90%] sm:w-[70%] h-[50%] text-center">Khách hàng liên hệ thông qua tổng đài
+                    19001806 hoặc đến bệnh viện trực tiếp để được tư vấn và đặt lịch khám.</p>
+                <img class="w-[50px] h-[50px]" src="/image/icon13.png" alt="">
+                <!-- <div class="invisible lg:visible flex justify-center"> -->
+                    <div class="bg-gradient-to-r from-pink-btn to-pink-btn1 w-[25%] h-10 rounded-full lg:mr-1"></div>
+                <!-- </div> -->
+            </div>
+            <div class="mb-12 flex flex-[50%] md:flex-[23%] lg:gap-4 flex-col items-center ">
+                <img src="/image/icon10.png" alt="">
+                <h3 class="font-medium text-lg">Bước 2:</h3>
+                <p class="min-h-[50px] w-[90%] sm:w-[70%] h-[50%] text-center">Thanh toán chi phí của gói khám.</p>
+                <img class="w-[50px] h-[50px]" src="/image/icon14.png" alt="">
+                <div class="bg-gradient-to-r from-pink-btn to-pink-btn1 w-[25%] h-10 rounded-full lg:mr-1"></div>
+            </div>
+            <div class="mb-12 flex flex-[50%] md:flex-[23%] lg:gap-4 flex-col items-center ">
+                <img src="/image/icon11.png" alt="">
+                <h3 class="font-medium text-lg">Bước 3:</h3>
+                <p class="min-h-[50px] w-[90%] sm:w-[70%] h-[50%] text-center">Thực hiện các bước thăm khám, xét nghiệm
+                    và chẩn đoán bằng hình ảnh tại viện.</p>
+                <img class="w-[50px] h-[50px]" src="/image/icon15.png" alt="">
+                <div class="bg-gradient-to-r from-pink-btn to-pink-btn1 w-[25%] h-10 rounded-full lg:mr-1"></div>
+            </div>
+            <div class="mb-12 flex flex-[50%] md:flex-[23%] lg:gap-4 flex-col items-center ">
+                <img src="/image/icon12.png" alt="">
+                <h3 class="font-medium text-lg">Bước 4:</h3>
+                <p class="min-h-[50px] w-[90%] sm:w-[70%] h-[50%] text-center">Bác sĩ trả kết quả, kết luận và tư vấn
+                    quá trình điều trị tiếp theo (nếu có).</p>
+                <img class="w-[50px] h-[50px]" src="/image/icon16.png" alt="">
+                <div class="bg-gradient-to-r from-pink-btn to-pink-btn1 w-[25%] h-10 rounded-full lg:mr-1"></div>
+            </div>
+        </div>
+        <div
+            class="w-[80%] m-auto mt-8 lg:mt-8 bg-gradient-to-r from-green to-green-btn shadow-lg shadow-green/50 text-white flex justify-center rounded-full px-2 py-2 sm:w-[40%] lg:w-[17%]">
+            <a class="" href="tel:0866824564">
+                Đăng ký tư vấn
+            </a>
+        </div>
+    </section>
+    <!-- section 9 -->
+
+    <h2 class="text-3xl font-semibold text-center mt-16">Đội ngũ bác sĩ của chúng tôi</h2>
+    <section class="px-4 mt-12 bg-no-repeat bg-bottom img1 md:h-[480px] lg:h-[560px]  lg:mt-20 text-black"
+        style="background-image: url('/image/backgrou5.png')">
+        <div class="container flex flex-col flex-wrap sm:gap-3 lg:gap-2 sm:flex-row">
+            <div class="flex flex-col sm:flex-[45%] lg:flex-[20%] items-center text-center text-black lg:text-white ">
+                <img class="border-b-4 w-[250px] h-[360px]" src="/image/bs1.png" alt="">
+                <h3 class="text-lg font-semibold mt-3 lg:h-14">NGUYỄN TRUNG CHÍNH</h3>
+                <p class="h-10">PGS.TS. Bác sĩ Ung bướu </p>
+                <div class="flex gap-[5px] py-2">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                </div>
+                <p>4.8/5 (38 bình chọn)</p>
+            </div>
+            <div class="flex flex-col sm:flex-[45%] lg:flex-[20%] items-center text-black lg:text-white ">
+                <img class="border-b-4 w-[250px] h-[360px]" src="/image/bs2.png" alt="">
+                <h3 class="text-lg font-semibold mt-3 lg:h-14">NGUYỄN ĐỨC HÙNG</h3>
+                <p class="h-10">PGS.TS. Bác sĩ Nha Khoa</p>
+                <div class="flex gap-[5px] py-2">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                </div>
+                <p>4.8/5 (38 bình chọn)</p>
+            </div>
+            <div class="flex flex-col sm:flex-[45%] lg:flex-[20%] items-center text-black lg:text-white ">
+                <img class="border-b-4 w-[250px] h-[360px]" src="/image/bs3.png" alt="">
+                <h3 class="text-lg font-semibold mt-3 lg:h-14">HOÀNG VIỆT ĐỨC</h3>
+                <p class="h-10">PGS.TS. Bác sĩ Nội Khoa</p>
+                <div class="flex gap-[5px] py-2">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                </div>
+                <p>4.8/5 (38 bình chọn)</p>
+            </div>
+            <div class="flex flex-col sm:flex-[45%] lg:flex-[20%] items-center text-black lg:text-white ">
+                <img class="border-b-4 w-[250px] h-[360px]" src="/image/bs4.png" alt="">
+                <h3 class="text-lg font-semibold mt-3 lg:h-14">PHẠM THỊ MAI LINH</h3>
+                <p class="h-10">PGS.TS. Bác sĩ Ngoại Khoa</p>
+                <div class="flex gap-[5px] py-2">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                </div>
+                <p>4.8/5 (38 bình chọn)</p>
+            </div>
+        </div>
+    </section>
+    <!-- section 10 -->
+
+    <section class="px-4 pt-0 bg-no-repeat bg-top img md:mt-[520px] lg:h-[850px] xl:h-[780px] lg:mt-20 text-black"
+        style="background-image: url('/image/image.png')">
+        <h2 class="font-semibold text-3xl lg:text-[38px] text-center xl:text-white lg:w-[70%] pt-20 m-auto">Cảm nhận của
+            khách hàng sau khi sử dụng dịch vụ Tầm soát ung thư tuyến giáp</h2>
+        <div class="container flex flex-col md:flex-row gap-8 xl:mt-20">
+            <div class="flex flex-col items-center bg-white rounded-2xl lg:w-[448px] lg:h-[492px] py-[48px] lg:px-8">
+                <img src="./image/icon17.png" alt="">
+                <h3 class="w-[80%] text-center font-semibold py-3">Bệnh viện Phương Đông mang đến cho tôi cảm giác vô
+                    cùng bình yên và an tâm khi thăm khám tại đây!</h3>
+                <p class="text-center text-sm pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit nulla
+                    etiam sed consequat dictumst
+                    viverra molestie tortor feugiat. Purus consequat, sapien diam nec. Egestas lacinia scelerisque
+                    ultrices vivamus adipiscing diam massa phasellus diam. Sit mi at nibh amet, suscipit dui ornare
+                    cursus duis.
+                </p>
+                <img src="./image/Ellipse1.png" alt="">
+                <h3 class="font-semibold text-lg py-2">Nguyễn Minh Ánh</h3>
+                <div class="flex gap-[5px]">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col items-center bg-white rounded-2xl lg:w-[448px] lg:h-[492px] py-[48px] lg:px-8">
+                <img src="./image/icon17.png" alt="">
+                <h3 class="w-[80%] text-center font-semibold py-3">Bệnh viện Phương Đông mang đến cho tôi cảm giác vô
+                    cùng bình yên và an tâm khi thăm khám tại đây!</h3>
+                <p class="text-center text-sm pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit nulla
+                    etiam sed consequat dictumst
+                    viverra molestie tortor feugiat. Purus consequat, sapien diam nec. Egestas lacinia scelerisque
+                    ultrices vivamus adipiscing diam massa phasellus diam. Sit mi at nibh amet, suscipit dui ornare
+                    cursus duis.
+                </p>
+                <img src="./image/Ellipse2.png" alt="">
+                <h3 class="font-semibold text-lg py-2">Hoàng Hải Dương</h3>
+                <div class="flex gap-[5px]">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col items-center bg-white rounded-2xl lg:w-[448px] lg:h-[492px] py-[48px] lg:px-8">
+                <img src="./image/icon17.png" alt="">
+                <h3 class="w-[80%] text-center font-semibold py-3">Bệnh viện Phương Đông mang đến cho tôi cảm giác vô
+                    cùng bình yên và an tâm khi thăm khám tại đây!</h3>
+                <p class="text-center text-sm pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit nulla
+                    etiam sed consequat dictumst
+                    viverra molestie tortor feugiat. Purus consequat, sapien diam nec. Egestas lacinia scelerisque
+                    ultrices vivamus adipiscing diam massa phasellus diam. Sit mi at nibh amet, suscipit dui ornare
+                    cursus duis.
+                </p>
+                <img src="./image/Ellipse3.png" alt="">
+                <h3 class="font-semibold text-lg py-2">Nguyễn Mai Anh</h3>
+                <div class="flex gap-[5px]">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                    <img src="./image/Star.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 11 -->
+
+    <section class="px-4 lg:px-0 container flex flex-col md:flex-row items-center mt-24">
+        <div class="flex-[60%]">
+            <img src="./image/img list.png" alt="">
+        </div>
+        <div class="flex-[40%] mt-10">
+            <div class="py-2 bg-gradient-to-r from-pink-btn to-pink-btn1 rounded-t-xl lg:w-[100%]">
+                <h3 class="text-xl pb-2 text-white text-center">ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</h3>
+                <p class="text-sm text-white text-center">Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp thời!</p>
+            </div>
+            <form action="" class="flex flex-col mt-6">
+                <input class="outline-none w-[90%] m-auto py-3 text-lg" type="text" name="" id="" placeholder="Họ và tên(*)">
+                <input class="outline-none w-[90%] m-auto py-3 text-lg" type="text" name="" id="" placeholder="Số điện thoại(*)">
+                <input class="outline-none w-[90%] m-auto py-3 text-lg" type="text" name="" id="" placeholder="Email">
+                <input class="outline-none w-[90%] m-auto py-3 text-lg" type="text" name="" id="" placeholder="Nội dung...">
+                <div
+                    class="w-[60%] m-auto mt-8 lg:mt-8 bg-gradient-to-r from-green to-green-btn shadow-lg shadow-green/50 text-white flex justify-center rounded-full px-2 py-2 sm:w-[70%] lg:w-[50%]">
+                    <a class="flex" href="tel:0866824564">
+                        <img src="./image/vecter.png" alt="">
+                        <p class="ml-2">Đăng ký tư vấn</p>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- section 12 -->
+
+    <footer class="px-4 lg:px-0 mt-20 bg-gradient-to-r from-pink-btn to-pink-btn1">
+        <div class="container">
+            <div class="py-4">
+                <img src="./image/Logo 1.png" alt="">
+            </div>
+            <div class="flex flex-col md:flex-row justify-between text-white flex-wrap">
+                <div class="md:w-[50%] lg:w-[33%]">
+                    <h2 class="pt-4 pb-1 font-medium text-lg lg:py-2">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h2>
+                    <p class="lg:pb-2 "><strong>Địa chỉ:</strong> Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN</p>
+                    <p class="lg:pb-2 "><strong>Email:</strong> bvphuongdong@phuongdonghospital.vn</p>
+                    <p class=""><strong>Hotline:</strong> 1900 1806</p>
+                </div>
+                <div class="lg:w-[22%] md:w-[50%]">
+                    <h2 class="pt-4 pb-1 font-medium text-lg lg:py-2">Thời gian mở cửa</h2>
+                    <p class="lg:pb-2 flex"><strong class="w-[50%] ">Thứ 2 - Chủ nhật:</strong>07:30 -19:00</p>
+                    <p class="flex"><strong class="w-[50%] ">Cấp cứu 24/7:</strong>0833 015 115</p>
+                </div>
+                <div class="lg:w-[22%] md:w-[50%]">
+                    <h2 class="pt-4 pb-1 font-medium text-lg lg:py-2">Liên hệ</h2>
+                    <p class="lg:pb-2 flex"><strong class="w-[50%] ">Hotline Tiêm chủng:</strong>0911 615 115</p>
+                    <p class=" flex"><strong class="w-[50%] ">Hotline Khoa sản:</strong>0911 615 115</p>
+                </div>
+                <div class="lg:w-[22%] md:w-[50%]">
+                    <h2 class="pt-4 pb-1 font-medium text-lg lg:py-2">Mạng xã hội</h2>
+                    <div class="flex">
+                        <a class="w-[15%] lg:w-[25%]" href="facebook.com">
+                            <img src="./image/fb.png" alt="">
+                        </a>
+                        <a class="w-[15%] lg:w-[25%]" href="facebook.com">
+                            <img src="./image/youtube.png" alt="">
+                        </a>
+                        <a class="w-[15%] lg:w-[25%]" href="facebook.com">
+                            <img src="./image/twitter.png" alt="">
+                        </a>
+                        <a class="w-[15%] lg:w-[25%]" href="facebook.com">
+                            <img src="./image/instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-white mt-7">
+            <p class="text-white text-center py-3">© Copyright 2022 Bệnh Viện Đa khoa Phương Đông. All Rights Reserved. Designed and developed by Tech5S</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
